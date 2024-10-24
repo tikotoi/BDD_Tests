@@ -19,9 +19,9 @@
       "git add"
     ]
   },
-  "author": "Tinatin ABuladze",
+  "author": "Tinatin Abuladze",
   "license": "UNLICENSED",
-  "description": "trello web's bdd tests",
+  "description": "BDD tests for trello",
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "@rpii/wdio-html-reporter": "^7.7.1",
