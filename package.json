@@ -43,8 +43,4 @@
     "wdio-geckodriver-service": "^5.0.2",
     "wdio-html-nice-reporter": "^8.1.6"
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/main
