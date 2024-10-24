@@ -24,10 +24,19 @@ const requireFiles = [...stepDefinitionsFiles, ...featureFiles];
 export const config = {
   runner: "local",
   specs: [join(__dirname, "../*.feature")],
-  maxInstances: 1,
+  maxInstances: 7,
   capabilities: [
     {
-      browserName: "chrome"
+      browserName: "chrome",
+      "goog:chromeOptions": {
+        args: ["headless", "disable-gpu"]
+      }
+    },
+    {
+      browserName: "firefox",
+      "moz:firefoxOptions": {
+        args: ["-headless"]
+      }
     }
   ],
   logLevel: "error",
@@ -36,7 +45,7 @@ export const config = {
   waitforTimeout: 10000,
   connectionRetryTimeout: 120000,
   connectionRetryCount: 3,
-  services: ["chromedriver"],
+  services: ["chromedriver", "geckodriver"],
   framework: "cucumber",
   reporters: [
     [
