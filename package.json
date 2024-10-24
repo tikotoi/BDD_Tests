@@ -1,7 +1,7 @@
 {
   "name": "newcucu",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "npx wdio run features/src/configs/wdio.conf.js"
   },

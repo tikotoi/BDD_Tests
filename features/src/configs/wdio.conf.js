@@ -1,4 +1,4 @@
-exports.config = {
+export const config = {
   //
   // ====================
   // Runner Configuration
@@ -124,7 +124,7 @@ exports.config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
-  reporters: ['spec'],
+  reporters: ["spec"],
 
   // If you are using Cucumber you need to specify the location of your step definitions.
   cucumberOpts: {
